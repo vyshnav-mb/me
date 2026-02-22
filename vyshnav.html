@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyshnav M.B - Profile</title>
+    <style>
+        :root {
+            --bg-yellow: #fce255;
+            --text-black: #111111;
+            --line-color: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-yellow);
+            color: var(--text-black);
+            line-height: 1.4;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            width: 100%;
+            display: flex;
+            gap: 40px;
+            position: relative;
+        }
+
+        /* LEFT COLUMN */
+        .left-column {
+            flex: 0 0 35%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            margin-bottom: 5px;
+            letter-spacing: -1px;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .traits {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        .demographics {
+            list-style: none;
+            margin-bottom: 40px;
+            z-index: 2;
+        }
+
+        .demographics li {
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            gap: 15px;
+        }
+
+        .demographics svg {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+        }
+
+        /* Large Quotes Background decoration */
+        .bg-quotes {
+            position: absolute;
+            top: 250px;
+            left: 100px;
+            font-size: 15rem;
+            color: rgba(255, 255, 255, 0.4);
+            font-family: Georgia, serif;
+            line-height: 0;
+            z-index: 1;
+            user-select: none;
+        }
+
+        /* Image Styling */
+        .profile-image {
+            margin-top: auto;
+            width: 280px;
+            height: 320px;
+            border-radius: 10px 10px 0 0;
+            object-fit: cover;
+            object-position: top;
+            z-index: 2;
+            background-color: transparent;
+        }
+
+        /* RIGHT COLUMN */
+        .right-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .grid-top {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--line-color);
+            margin: 20px 0 30px 0;
+            opacity: 0.3;
+        }
+
+        .narrative {
+            margin-bottom: 20px;
+        }
+
+        .narrative h3 {
+            font-size: 1.4rem;
+        }
+
+        .narrative p {
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Responsive */
+        @media (max-width: 850px) {
+            .container {
+                flex-direction: column;
+            }
+            .left-column {
+                flex: none;
+                width: 100%;
+            }
+            .grid-top {
+                grid-template-columns: 1fr;
+            }
+            .profile-image {
+                margin: 40px auto;
+                border-radius: 10px;
+            }
+            .bg-quotes {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="left-column">
+        <h1>Vyshnav M.B</h1>
+        <div class="tagline">“Think Digital. Build Intelligent.”</div>
+        <div class="traits">Diligent &bull; Social &bull; Analytical &bull; Collaborative</div>
+
+        <ul class="demographics">
+            <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                21 years old
+            </li>
+            <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                B.Tech in ECE (2nd Year)
+            </li>
+            <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Thiruvananthapuram, Kerala
+            </li>
+            <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                vyshnavmb667@gmail.com
+            </li>
+        </ul>
+
+        <div class="bg-quotes">"</div>
+
+        <img src="vy.jpeg" alt="Vyshnav M.B" class="profile-image">
+    </div>
+
+    <div class="right-column">
+        <div class="grid-top">
+            
+            <div>
+                <h3>Goals</h3>
+                <ul>
+                    <li>Continuously learn and stay updated with emerging tech via workshops and seminars</li>
+                    <li>Apply an analytical, problem-solving mindset to real-world engineering challenges</li>
+                    <li>Engage effectively in hackathons and technical events as a collaborative team player</li>
+                </ul>
+
+                <br>
+                <h3>Community & Extracurriculars</h3>
+                <ul>
+                    <li><strong>Social Work:</strong> Active and proud member of the National Service Scheme (NSS), dedicated to community service</li>
+                    <li><strong>Sports:</strong> Local basketball tournament participant, bringing energy and support to the team</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Hobbies & Interests</h3>
+                <ul>
+                    <li>Exploring new ideas in tech and web development</li>
+                    <li>Solving Rubik's cubes</li>
+                    <li>Traveling and discovering new places</li>
+                    <li>Watching movies to unwind</li>
+                </ul>
+
+                <br>
+                <h3>Skills</h3>
+                <ul>
+                    <li>Circuit Debugging</li>
+                    <li>Web Development</li>
+                    <li>Video Editing</li>
+                    <li>Photography</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="narrative">
+            <h3>Narrative</h3>
+            <p>Vyshnav is a 21-year-old Electronics and Computer Engineering student currently in his second year of a Bachelor of Technology program in Thiruvananthapuram, Kerala. Highly driven and diligent, he considers himself a continuous learner who actively participates in technical workshops and seminars to stay ahead of emerging tech trends. He excels at balancing his rigorous academic schedule with his deep involvement in extracurricular activities, showcasing excellent time management and collaborative skills.</p>
+            
+            <p>During his off time, Vyshnav is deeply committed to community upliftment as a proud member of the National Service Scheme (NSS). Whether he is debugging complex circuits, playing basketball in local tournaments, or unwinding by solving Rubik's cubes and editing videos, he brings an analytical and energetic mindset to everything he does. Equipped with strong communication abilities, he continually looks forward to presenting his ideas clearly and building intelligent digital solutions.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
